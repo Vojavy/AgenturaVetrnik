@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple"
+    tools:context=".menu.MyChildFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="4dp"
+            android:backgroundTint="@color/beige"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titan_one"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="22dp"
+                    android:text="@string/name"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/main_big_txt" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cursorVisible="true"
+                    android:fontFamily="@font/titan_one"
+                    android:gravity="center|end"
+                    android:hint="@string/enter_name_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingEnd="30dp"
+                    android:textColor="@color/text_second"
+                    android:textSize="@dimen/main_txt"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="4dp"
+            android:backgroundTint="@color/beige"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titan_one"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="22dp"
+                    android:text="@string/gender_name"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/main_big_txt" />
+
+                <Spinner
+                    android:id="@+id/sp_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dropDownWidth="80dp"
+                    android:dropDownSelector="@color/light_beige"
+                    android:entries="@array/genders"
+                    android:gravity="center|end"
+                    android:paddingEnd="30dp">
+
+                </Spinner>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="4dp"
+            android:backgroundTint="@color/beige"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titan_one"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="22dp"
+                    android:text="@string/date_of_creating"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/main_big_txt" />
+
+                <TextView
+                    android:id="@+id/tv_enter_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titan_one"
+                    android:gravity="center|end"
+                    android:hint="@string/enter_date_hint"
+                    android:maxLines="1"
+                    android:paddingEnd="30dp"
+                    android:textColor="@color/text_second"
+                    android:textSize="@dimen/main_txt" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_apply_changes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/beige"
+        android:fontFamily="@font/titan_one"
+        android:text="@string/apply_changes"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/main_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="my_child_as">Moje dite je velke jako</string>
+    <string name="gender">To je</string>
+    <string name="gender_name">Gender</string>
+    <string name="name">Jmenuje se</string>
+    <string name="childs_weight">Vaha:</string>
+    <string name="childs_scale">Vyshka:</string>
+
+    <string name="settings_bt_menu">Nastavení</string>
+    <string name="article_bt_menu">Všechny články</string>
+    <string name="calendar_bt_menu">Kalendář</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="main_menu_menu">Hlavní menu</string>
+    <string name="main_menu_contact_support">Technická podpora</string>
+    <string name="about_company_menu">O firme</string>
+    <string name="my_child_menu">Moje dite</string>
+
+    <string name="delete_all_information_about_child_settings">Delete information</string>
+    <string name="log_out_settings">Log out?</string>
+    <string name="change_stile_settings">Change theme</string>
+    <string name="push_bt_settings">Push</string>
+
+
+    <string name="enter_name_hint">enter name</string>
+    <string name="enter_date_hint">enter date</string>
+
+    <string name="apply_changes">Apply Changes</string>
+
+    <string name="infomation_is_null">Nevim</string>
+    <string name="woman">Holcicka</string>
+    <string name="man">Chlapeček</string>
+
+    <string name="date_of_creating">Počat</string>
+
+    <string-array name="genders">
+        <item>Nevim</item>
+        <item>Holcicka</item>
+        <item>Chlapeček</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">MenuActivity</string>
+
+</resources>
